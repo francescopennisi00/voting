@@ -20,6 +20,6 @@ def create_app(config=BaseConfig):
     def healthz():
         foo = os.getenv('FOO','bar')
         print(foo)
-        return "Alive !"
+        return "Alive!"
 
     return app

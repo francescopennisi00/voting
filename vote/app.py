@@ -16,7 +16,7 @@ app = create_app(config)
 if __name__ == '__main__':
     foo = os.getenv('FOO','bar')
     print(foo)  #verra' stampato solo se faccio python app.py, non se faccio flask run
-    app.run(host='0.0.0.0', debug=True,threaded=True)
+    app.run(host='0.0.0.0',debug=True,threaded=True)
 
 
 #il comando activate può essere usato senza source (che non esiste su ambiente Windows)
@@ -24,3 +24,4 @@ if __name__ == '__main__':
 #si trova su Scrpts (virtual env Python è diverso su Windows che su Linux)
 #forse si attiva in automatico
 #il feedback se e' attivo lo abbiamo da (venv) nella PowerShell
+#se attivo posso usare flask al suo interno, infatti nella directory vote posso usare flask run --debug
