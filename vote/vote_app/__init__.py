@@ -12,7 +12,7 @@ def create_app(config=BaseConfig):
     def hello():
         foo = os.getenv('FOO','bar')
         #bar è il valore di default (nel caso in cui la variabile di ambiente non sia definita
-        return "Hello World! " + str(foo);
+        return "Hello World! " + str(foo)
 
     #dimostro che c'è il live reload attivo
     #permette di fare debug interattivo senza re-build dell'immagine (es. in ambiente Dockerizzato)

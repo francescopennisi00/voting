@@ -21,5 +21,6 @@ if __name__ == '__main__':
 
 #il comando activate può essere usato senza source (che non esiste su ambiente Windows)
 #con il Activate su venv (cercare su stack overflow, activate flask without source)
+#si trova su Scrpts (virtual env Python è diverso su Windows che su Linux)
 #forse si attiva in automatico
 #il feedback se e' attivo lo abbiamo da (venv) nella PowerShell
