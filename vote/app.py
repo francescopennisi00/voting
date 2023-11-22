@@ -3,10 +3,10 @@ from config import BaseConfig, ProdConfig
 import os
 
 env = os.environ.get("VOTE_ENV", 'dev')
-# potremmo poi cambiare 'dev' in 'prod' nel caso in cui volessimo usare la configurazione di produzione
-# da definire (insieme a quella di sviluppo) nel file config.py
+# 'dev' è il valore di default ma il value della variabile VOTE_ENV potrebbe anche essere 'prod'
+# le effettive configurazioni di development e production sono da definire  nelle rispettive classi in config.py
 
-config = BaseConfig
+config = BaseConfig  # si assume classe BaseConfig = classe DevConfig
 
 if env == 'prod':
     config = ProdConfig
